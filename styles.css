@@ -1,0 +1,49 @@
+body{
+    width:100%;
+}
+.container{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(250, 217, 223);
+    width:400px !important;
+    box-shadow: 0 0 20px rgb(55, 54, 54 ,.6);
+}
+input{
+    width:300px;
+    padding:5px;
+    border-width: 1px;;
+}
+.add-btn{
+   padding:3.5px;
+   width:55px
+}
+.completed{
+    text-decoration: line-through;
+}
+.task-text:hover{
+    cursor: pointer;
+}
+.tasks{
+    list-style:none;
+}
+button{
+    color:rgb(250, 217, 223);
+    background-color: black;
+    border-radius: 5px !important;
+}
+button:hover ,button:focus{
+    transform: scale(1.07);
+}
+.checkbox{
+    width:30px;
+}
+
+@media (max-width: 600px) {
+    .container {
+      width: 90vw !important;
+    }
+    input{
+        width:65vw; 
+    }
+  }
